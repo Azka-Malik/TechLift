@@ -17,7 +17,6 @@ app.get('/dynamicimage', (req, res) => {
   let ImagePath = path.join(__dirname, ImageName);
   
   res.sendFile(ImagePath)
-  //res.send(ImageName)
 })
 
 app.listen(port, () => {
