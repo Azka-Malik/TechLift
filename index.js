@@ -14,7 +14,6 @@ app.get('/pic', (req, res) => {
   res.sendFile(ImagePath)
 })
 
-
 //Dynamic Image and Not Found Error
 app.get('/dynamicimage', (req, res) => {
   ImageName = req.query.imagename
@@ -35,9 +34,9 @@ app.get('/dynamicimage', (req, res) => {
  // res.sendFile(ImagePath)
 })
 
-
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
 
 
