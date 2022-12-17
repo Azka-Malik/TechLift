@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 80
 const path = require('path')
 
 //Create Server
-app.get('/user', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello World')
 })
 
